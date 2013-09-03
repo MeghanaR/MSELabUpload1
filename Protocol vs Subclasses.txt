@@ -1,0 +1,15 @@
+PROTOCOLS Vs SUBCLASSES
+-------------------------
+
+Protocol
+==========
+A protocol is basically a list of methods which is shared among classes the methods in the protocols do not have a body they are meant to be implemented by the developer implementing the protocol for his/her class.
+If the class adopts the protocol, then it has to implement all those methods in the class.
+To adopt a protocol, add it to the class header file :-                                	Example:-   @interface FavoritesViewController : UIViewController 		<UITableViewDelegate, UITableViewDataSource>
+The protocol names appear after the class declaration, inside angled brackets. When adopting more than one protocol, list them in a comma-separated list.
+
+Subclasses
+============
+A subclass inherits methods and instance variables from its superclass.
+A subclass can override a method it inherits from the class it is based on. The class it is based on is called its superclass.
+
